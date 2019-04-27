@@ -1,0 +1,385 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  padding: 70px 100px;
+  box-shadow: 10px 14px 10px black;
+}
+@media only screen and (max-width: 480px) {
+  .container {
+    padding: 40px 40px;
+    text-align: center;
+  }
+}
+
+.menubar {
+  background-color: black;
+  top: 0px;
+  position: sticky;
+  z-index: 100;
+  padding: 10px 0px;
+}
+.menu li {
+  font-family: verdana;
+  font-size: 0.86rem;
+  display: inline-block;
+}
+.menu {
+  padding: 5px;
+  word-spacing: 10px;
+  text-align: center;
+  min-width: 50%;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 480px) {
+  .menu {
+    padding-left: 0px;
+  }
+}
+.menubar a {
+  text-decoration: none;
+  color: white;
+}
+.menubar a:visited {
+  color: white;
+}
+.menubar a:hover {
+  background-color: grey;
+  padding: 5px;
+  transition: 500ms;
+}
+.menubar a:active {
+  background-color: darkgray;
+}
+.clearfix::after {
+  content: " ";
+  clear: both;
+  display: table;
+}
+.col-33 {
+  float: left;
+  width: 33.3%;
+  padding-right: 10px;
+}
+.col-50 {
+  float: left;
+  width: 50%;
+}
+.col-66 {
+  float: left;
+  width: 66%;
+  padding-right: 10px;
+}
+@media only screen and (max-width: 480px) {
+  .col-33,
+  .col-66 {
+    float: none;
+    width: 100%;
+    padding: 0;
+  }
+  .col-33 {
+    padding-bottom: 10px;
+  }
+}
+.hero-image {
+  border-radius: 100%;
+}
+.hero-text {
+  padding-left: 100px;
+}
+@media only screen and (max-width: 480px) {
+  .hero-image {
+    width: 100%;
+  }
+  .hero-text {
+    padding-left: 0px;
+  }
+}
+.hero-text h1 {
+  font-size: 50px;
+  font-family: verdana;
+  color: black;
+  margin-top: 20px;
+  /*color change karna hai*/
+}
+.hero-text p {
+  margin-top: 20px;
+  font-size: 20px;
+  font-family: verdana;
+}
+button {
+  margin-top: 30px;
+  padding: 30px 40px;
+  font-size: 20px;
+  font-family: verdana;
+  background-color: #1c7fe2;
+  border: none;
+  box-shadow: 5px 5px 5px black;
+  color: white;
+  font-weight: 900;
+  /*color change krne ka hai*/
+}
+button:hover {
+  background-color: #3d93e9;
+  cursor: pointer;
+  transition: 1s;
+  /*color change krne ka hai*/
+}
+.section-heading {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.section-heading h3 {
+  font-size: 40px;
+  font-family: verdana;
+  color: white;
+  /*color dekhlena baad mai*/
+}
+.section-heading p {
+  font-size: 20px;
+  font-family: verdana;
+  color: white;
+}
+.skill-co {
+  background-color: white;
+  padding: 50px;
+  text-align: center;
+  box-shadow: 5px 5px 5px grey;
+}
+.skill-co i {
+  font-size: 100px;
+  padding: 20px;
+  color: tomato;
+}
+.skill-co h3 {
+  font-family: verdana;
+  font-size: 20px;
+}
+.skill-co p {
+  font-size: 20px;
+  font-family: verdana;
+}
+.section-footer {
+  text-align: center;
+  padding: 30px;
+  margin-top: 20px;
+}
+.section-footer p {
+  font-size: 20px;
+  font-family: verdana;
+}
+.image2 {
+  width: 300px;
+  height: 200px;
+}
+@media only screen and (max-width: 480px) {
+  .image2 {
+    width: 200px;
+    height: 200px;
+  }
+}
+.row {
+  padding-bottom: 30px;
+}
+.work-col {
+  background-color: white;
+  text-align: center;
+  padding:0;
+  padding-bottom: 30px;
+  box-shadow: 5px 5px 5px grey;
+}
+.work-col h3 {
+  font-size: 20px;
+  font-family: verdana;
+}
+.work-col p {
+  font-size: 20px;
+  font-family: verdana;
+}
+a {
+  text-decoration: none;
+  font-weight: 900;
+  color: #2c2727;
+}
+a:visited {
+  text-decoration: none;
+  color: #2c2727;
+}
+a:hover {
+  background-color: white;
+  transition: 1s;
+}
+.work-image img {
+  text-align: center;
+  margin: 0 auto;
+}
+.contact-form-input label {
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important;
+}
+#CONTACT {
+  background-color: black;
+}
+.contact-form {
+  width: 40%;
+  margin: 0 auto;
+}
+.contact-form-input {
+  padding: 5px;
+}
+.contact-form-input input,
+.contact-form-input textarea {
+  padding: 15px;
+  background-color: black;
+  color: white;
+  font-family: verdana;
+  width: 100%;
+  border-radius: 4px;
+  box-shadow: 2px 2px 2px grey;
+}
+.contact-form-input:focus,
+.contact-form-input:focus {
+  outline: none;
+  border: 1px solid blue;
+}
+.contact-form-buttons {
+  text-align: center;
+}
+
+.buttons2 {
+  padding: 15px 25px;
+  font-family: verdana;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  margin-left: 10px;
+  margin-top: 20px;
+  background-color: grey;
+}
+.buttons1 {
+  background-color: blue;
+  padding: 15px 25px;
+  font-family: verdana;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+.buttons1:hover {
+  background-color: cyan;
+  transition: 1s;
+}
+.buttons2:hover {
+  background-color: darkgrey;
+  transition: 1s;
+}
+#xxx {
+  background-color: black;
+}
+.creatorsname {
+  color: grey;
+  text-align: center;
+}
+.icons {
+  color: grey;
+  text-align: center;
+  margin: 20px;
+  font-size: 30px;
+}
+.icons i:hover {
+  transform: translateY(-10px);
+  background-color: black;
+}
+@media only screen and (max-width: 480px) {
+  .hero {
+    position: static;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .hero-row {
+    position: static;
+    transform: none;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .hero-text h1 {
+    font-size: 30px;
+    font-weight: 500;
+    margin: auto;
+  }
+  .hero-text p {
+    font-size: 20px;
+  }
+  button:hover {
+    padding: none;
+  }
+}
+@media only screen and (max-width: 480px) {
+  button {
+    font-size: 20px;
+    padding: 10px 15px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .section-heading h3 {
+    font-size: 30px;
+  }
+  .contact-form {
+    width: 100%;
+  }
+}
+.work-col h3 {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+  .container {
+    padding: 25px 50px;
+  }
+
+  .hero-image {
+    width: 50%;
+    margin-left: 160px;
+  }
+  .hero-text h1 {
+    font-size: 30px;
+  }
+  .hero-text p {
+    font-size: 20px;
+  }
+  button {
+    font-size: 20px;
+  }
+  .col-33 {
+    float: none;
+    width: 100%;
+    padding-bottom: 10px;
+  }
+  .col-66 {
+    float: none;
+    width: 100%;
+  }
+  .skill-co h3 {
+    font-size: 30px;
+  }
+  .contact-form {
+    width: 100%;
+  }
+  button:hover {
+    padding: none;
+  }
+}
+.work-col a:hover {
+ color: grey;
+ transition: 500ms ease-out;
+}
+
+.work-col img{
+  width:100%;
+  margin-top:
+}
