@@ -12,7 +12,7 @@
       integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="Style/Normalize.css">
+    <link rel="stylesheet" href="Style/Normalize.css" />
   </head>
   <body>
     <header id="TOP" class="menubar" style="background-color:#4a4a4a">
@@ -242,7 +242,12 @@
         <h3>Have me make stuff for you</h3>
         <p>paragraph</p>
       </div>
-      <form class="contact-form">
+      <form
+        class="contact-form"
+        name="contact"
+        method="POST"
+        data-netlify="true"
+      >
         <div class="clearfix">
           <div class="contact-form-input col-50">
             <label for="name">Name</label>
